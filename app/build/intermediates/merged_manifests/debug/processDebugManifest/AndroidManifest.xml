@@ -31,6 +31,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Psm_lab9_anawoj" >
         <activity
+            android:name="pl.anawoj.psm_lab9_anawoj.EditMessageActivity"
+            android:exported="false" />
+        <activity
             android:name="pl.anawoj.psm_lab9_anawoj.ShoutboxActivity"
             android:exported="false" />
         <activity

@@ -1229,6 +1229,7 @@ attr suffixText
 attr suffixTextAppearance
 attr suffixTextColor
 attr suggestionRowLayout
+attr swipeRefreshLayoutProgressSpinnerBackgroundColor
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
@@ -3893,7 +3894,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
 id imageView
 id immediateStop
 id included
@@ -3948,6 +3948,7 @@ id material_value_index
 id matrix
 id menu_button
 id message
+id message_input
 id middle
 id mini
 id month_grid
@@ -4080,6 +4081,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id send_button
 id setLogin
 id sharedValueSet
 id sharedValueUnset
@@ -4121,6 +4123,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id swipe_to_refresh_layout
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -4140,7 +4143,6 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
-id textInputEditText2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -4317,6 +4319,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_edit_message
 layout activity_login
 layout activity_shoutbox
 layout custom_dialog
@@ -5954,6 +5957,7 @@ styleable StateListDrawable android_dither android_visible android_variablePaddi
 styleable StateListDrawableItem android_drawable
 styleable StateListSizeChange widthChange
 styleable StateSet defaultState
+styleable SwipeRefreshLayout swipeRefreshLayoutProgressSpinnerBackgroundColor
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchMaterial useMaterialThemeColors
 styleable TabItem android_icon android_layout android_text

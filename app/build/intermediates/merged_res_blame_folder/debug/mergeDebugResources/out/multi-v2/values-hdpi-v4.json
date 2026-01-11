@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "pl.anawoj.psm_lab9_anawoj.app-mergeDebugResources-34:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "pl.anawoj.psm_lab9_anawoj.app-mergeDebugResources-35:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/home/arkay/.gradle/caches/8.13/transforms/19fcaa8913f5d6c28e4a1b1afb17fb42/transformed/appcompat-1.7.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/arkay/.gradle/caches/8.13/transforms/f3e7b053138c4d2f0d9dc8278bb52d2b/transformed/appcompat-1.7.1/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

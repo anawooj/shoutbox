@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import pl.anawoj.psm_lab9_anawoj.R
 
 
-open class MessageAdapter(private val messageList: ArrayList<Message>) :
+open class MessageAdapter(private val messageItemList: ArrayList<MessageItem>) :
     RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() {
 
     open class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -30,15 +30,21 @@ open class MessageAdapter(private val messageList: ArrayList<Message>) :
         holder: MessageViewHolder,
         i: Int
     ) {
-        val currentItem = messageList[i]
+        val currentItem = messageItemList[i]
         holder.login.text = currentItem.getLogin()
         holder.date.text = currentItem.getDate()
         holder.content.text = currentItem.getContent()
     }
 
     override fun getItemCount(): Int {
-        return messageList.size
+        return messageItemList.size
     }
 
+    interface OnItemClickListener {
+        fun onItemClicked(position: Int, view: View)
+    }
 
+    fun RecyclerView.addOnItemClickListener(onClickListener: OnItemClickListener) {
+
+    }
 }

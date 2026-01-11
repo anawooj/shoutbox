@@ -16,22 +16,22 @@
 12-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:6:22-64
 13
 14    <permission
-14-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+14-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/04a230490a3bf8161ac56e53cd45a325/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
 15        android:name="pl.anawoj.psm_lab9_anawoj.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+15-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/04a230490a3bf8161ac56e53cd45a325/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
 16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+16-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/04a230490a3bf8161ac56e53cd45a325/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
 17
 18    <uses-permission android:name="pl.anawoj.psm_lab9_anawoj.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+18-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/04a230490a3bf8161ac56e53cd45a325/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/04a230490a3bf8161ac56e53cd45a325/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-29:19
+20-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-32:19
 21        android:allowBackup="true"
 21-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
+22-->[androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/04a230490a3bf8161ac56e53cd45a325/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
 23-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:10:9-65
 24        android:debuggable="true"
@@ -51,93 +51,99 @@
 32-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:16:9-53
 33        <activity
 33-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:17:9-19:40
-34            android:name="pl.anawoj.psm_lab9_anawoj.ShoutboxActivity"
-34-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:18:13-45
+34            android:name="pl.anawoj.psm_lab9_anawoj.EditMessageActivity"
+34-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:18:13-48
 35            android:exported="false" />
 35-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:19:13-37
 36        <activity
-36-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:20:9-28:20
-37            android:name="pl.anawoj.psm_lab9_anawoj.LoginActivity"
-37-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:21:13-42
-38            android:exported="true" >
-38-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:22:13-36
-39            <intent-filter>
-39-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:23:13-27:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:24:17-69
-40-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:24:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:26:17-77
-42-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:26:27-74
-43            </intent-filter>
-44        </activity>
-45
-46        <provider
-46-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-48            android:authorities="pl.anawoj.psm_lab9_anawoj.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+36-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:20:9-22:40
+37            android:name="pl.anawoj.psm_lab9_anawoj.ShoutboxActivity"
+37-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:21:13-45
+38            android:exported="false" />
+38-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:22:13-37
+39        <activity
+39-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:23:9-31:20
+40            android:name="pl.anawoj.psm_lab9_anawoj.LoginActivity"
+40-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:24:13-42
+41            android:exported="true" >
+41-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:25:13-36
+42            <intent-filter>
+42-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:26:13-30:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:27:17-69
+43-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:27:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:29:17-77
+45-->/home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:29:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/3e462972279884896b405c1c83ec4136/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+50            android:name="androidx.startup.InitializationProvider"
+50-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/3e462972279884896b405c1c83ec4136/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+51            android:authorities="pl.anawoj.psm_lab9_anawoj.androidx-startup"
+51-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/3e462972279884896b405c1c83ec4136/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+52            android:exported="false" >
+52-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/3e462972279884896b405c1c83ec4136/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
 53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+53-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/3e462972279884896b405c1c83ec4136/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+54-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/3e462972279884896b405c1c83ec4136/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
 55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+55-->[androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/3e462972279884896b405c1c83ec4136/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
 56            <meta-data
-56-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-57                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-57-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+56-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/ff16786afe7ffe65891f773b3d4aacde/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+57-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/ff16786afe7ffe65891f773b3d4aacde/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
 58                android:value="androidx.startup" />
-58-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-59        </provider>
-60
-61        <receiver
-61-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-62            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-62-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-63            android:directBootAware="false"
-63-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-64            android:enabled="true"
-64-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-65            android:exported="true"
-65-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-66            android:permission="android.permission.DUMP" >
-66-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-67            <intent-filter>
-67-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-68                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-68-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-68-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-69            </intent-filter>
+58-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/ff16786afe7ffe65891f773b3d4aacde/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+60-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+61                android:value="androidx.startup" />
+61-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+62        </provider>
+63
+64        <receiver
+64-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+65            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+65-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+66            android:directBootAware="false"
+66-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+67            android:enabled="true"
+67-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+68            android:exported="true"
+68-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+69            android:permission="android.permission.DUMP" >
+69-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
 70            <intent-filter>
-70-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-71                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-71-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-71-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+70-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+71                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
 72            </intent-filter>
 73            <intent-filter>
-73-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-74                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-74-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-74-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+74                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
 75            </intent-filter>
 76            <intent-filter>
-76-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-77                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+77                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
 78            </intent-filter>
-79        </receiver>
-80    </application>
-81
-82</manifest>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+80                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+80-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+80-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/cfb707674b0af9ed1939a618eaadb728/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+81            </intent-filter>
+82        </receiver>
+83    </application>
+84
+85</manifest>

@@ -5,8 +5,8 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
@@ -16,19 +16,20 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.textfield.TextInputEditText
 import pl.anawoj.psm_lab9_anawoj.json.MessageAPI
-import pl.anawoj.psm_lab9_anawoj.json.structure.MessageContents
-import pl.anawoj.psm_lab9_anawoj.recycleview.Message
+import pl.anawoj.psm_lab9_anawoj.json.structure.MessageResponse
+import pl.anawoj.psm_lab9_anawoj.recycleview.MessageItem
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageAdapter
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.time.LocalDate
 
-class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
+    SwipeRefreshLayout.OnRefreshListener {
 
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mAdapter: RecyclerView.Adapter<MessageAdapter.MessageViewHolder>
@@ -37,12 +38,22 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     private lateinit var menuButton: ImageButton
     private lateinit var navView: NavigationView
     private lateinit var sharedPreferences: SharedPreferences
-    private lateinit var messageList: ArrayList<Message>
-    private lateinit var sendMessageButton : ImageButton
-    private lateinit var messageInput : TextInputEditText
-    private lateinit var retrofitURL : Retrofit
-    private lateinit var api : MessageAPI
-    private lateinit var login : String
+    private lateinit var messageItemList: ArrayList<MessageItem>
+    private lateinit var sendMessageButton: ImageButton
+    private lateinit var messageInput: TextInputEditText
+    private lateinit var retrofitURL: Retrofit
+    private lateinit var api: MessageAPI
+    private lateinit var login: String
+    private lateinit var swipeToRefreshLayout: SwipeRefreshLayout
+
+    //    private val handler: Handler = Handler()
+//    private val refresh: Runnable = object : Runnable {
+//        override fun run() {
+//            onRefresh()
+//            handler.postDelayed(this, timeToRefresh)
+//        }
+//    }
+    private var timeToRefresh = 300000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,7 +66,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         sharedPreferences = getSharedPreferences("LOGIN", MODE_PRIVATE)
         login = sharedPreferences.getString("LOGIN", "default")!!
 
-        messageList = ArrayList<Message>()
+        messageItemList = ArrayList<MessageItem>()
 
         retrofitURL = Retrofit.Builder()
             .baseUrl("https://tgryl.pl/")
@@ -67,20 +78,20 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
     private fun getMessageData() {
 
-        val call: Call<List<MessageContents?>> = api.getMessageInfo()
+        val call = api.getMessageInfo()
 
-        call.enqueue(object : retrofit2.Callback<List<MessageContents?>> {
+        call.enqueue(object : retrofit2.Callback<List<MessageResponse?>> {
             override fun onResponse(
-                call: Call<List<MessageContents?>>,
-                response: Response<List<MessageContents?>>
+                call: Call<List<MessageResponse?>>,
+                response: Response<List<MessageResponse?>>
             ) {
                 if (response.isSuccessful) {
                     val body = response.body()
 
                     if (body != null) {
                         for (field in body) {
-                            messageList.add(
-                                Message(
+                            messageItemList.add(
+                                MessageItem(
                                     field?.getLogin(),
                                     field?.getDate(),
                                     field?.getContent()
@@ -96,7 +107,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 }
             }
 
-            override fun onFailure(call: Call<List<MessageContents?>>, t: Throwable) {
+            override fun onFailure(call: Call<List<MessageResponse?>>, t: Throwable) {
                 startLoginActivity("Disconnected from the internet")
             }
         })
@@ -116,6 +127,8 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         sendMessageButton.setOnClickListener {
             sendMessage()
         }
+        swipeToRefreshLayout = findViewById(R.id.swipe_to_refresh_layout)
+        swipeToRefreshLayout.setOnRefreshListener(this)
 
         renderRecyclerView()
         renderNavDrawer()
@@ -125,7 +138,15 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         mRecyclerView = findViewById(R.id.recyclerView)
         mRecyclerView.setHasFixedSize(true)
         mLayoutManager = LinearLayoutManager(this)
-        mAdapter = MessageAdapter(messageList)
+        mAdapter = MessageAdapter(messageItemList.reversed() as ArrayList<MessageItem>)
+
+        mRecyclerView.addOnItemClickListener(object: OnItemClickListener {
+            override fun onItemClicked(position: Int, view: View) {
+                // Your logic
+                Toast.makeText(this@MainActivity, locationArrayList[position].locationName, Toast.LENGTH_SHORT).show()
+            }
+        })
+
         mRecyclerView.setLayoutManager(mLayoutManager)
         mRecyclerView.setAdapter(mAdapter)
     }
@@ -138,7 +159,6 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         menuButton.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
         }
-
         setNavigationViewListener()
     }
 
@@ -156,37 +176,56 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 startLoginActivity(null)
             }
         }
-
         return true
     }
 
-    private fun sendMessage(): String? {
+    private fun checkMessageValidity(messageContent: String): String? {
+
+        if (messageContent.isEmpty()) {
+            return "Brevity is the soul of wit, but your message does have to be at least 1 character long."
+        } else if (messageContent.length > 256) {
+            return "Message is too long."
+        }
+        // in theory always returns error, but if there are none, error is just null
+        return null
+    }
+
+    private fun sendMessage() {
 
         val messageContent = messageInput.getText()?.trim().toString()
-        var error = ""
+        val error = checkMessageValidity(messageContent)
 
-        if (messageContent.isEmpty()) { error =  "Brevity is the soul of wit, but your message does have to be at least 1 character long." }
-        else if(messageContent.length > 256){ error =  "Message is too long." }
-        else{
+        if (error.equals(null)) {
 
-            val messageToBeSent = Message(login, LocalDate.now().toString(), messageContent)
+            val call = api.setMessageInfo(messageContent, login)
 
-            val call: Response<Message> = api.setMessageInfo(messageToBeSent)
-
-            call.enqueue(object : retrofit2.Callback<Message> {
-                override fun onResponse(call: Call<Message?>, response: Response<Message?>) {
-                    Log.i("upload","is success:" +response.body());
+            call.enqueue(object : retrofit2.Callback<MessageResponse> {
+                override fun onResponse(
+                    call: Call<MessageResponse?>,
+                    response: Response<MessageResponse?>
+                ) {
+                    val test: MessageResponse? = response.body()
+                    Log.d(
+                        "post successful",
+                        test?.getLogin().toString() + " " + test?.getContent().toString()
+                    )
+                    onRefresh()
                 }
 
-                override fun onFailure(call: Call<Message?>, t: Throwable) {
-                    error = "Disconnected from the internet"
+                override fun onFailure(
+                    call: Call<MessageResponse?>,
+                    t: Throwable
+                ) {
+                    showErrors("Disconnected from the internet")
                 }
-
             })
+        } else {
+            showErrors(error)
         }
+    }
 
-        // in theory always returns error, but if call was successful, error is null
-        return error
+    private fun showErrors(error: String?) {
+        Toast.makeText(this, error, Toast.LENGTH_SHORT).show()
     }
 
     private fun startLoginActivity(error: String?) {
@@ -199,5 +238,12 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         sharedPreferences.edit {
             clear()
         }
+    }
+
+    override fun onRefresh() {
+        swipeToRefreshLayout.isRefreshing = true
+//        resetAutoRefresher()
+        swipeToRefreshLayout.postDelayed(this::getMessageData, 1000)
+        swipeToRefreshLayout.postDelayed({ swipeToRefreshLayout.isRefreshing = false }, 3000)
     }
 }
