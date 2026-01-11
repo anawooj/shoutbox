@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/layout_activity_login.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/layout/activity_login.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/drawable_send.png.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/drawable/send.png"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/layout_activity_shoutbox.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/layout/activity_shoutbox.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/layout_side_drawer_header.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/layout/side_drawer_header.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/xml_backup_rules.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/menu_side_drawer.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/menu/side_drawer.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/xml_data_extraction_rules.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/drawable_menu.png.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/drawable/menu.png"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/drawable_talk_bubbles.png.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/drawable/talk_bubbles.png"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-36:/layout_shout_item.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-38:/layout/shout_item.xml"
+    }
+]

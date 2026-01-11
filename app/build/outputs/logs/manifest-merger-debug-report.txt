@@ -1,0 +1,303 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-31:12
+MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/2727cbabb6d28bd070fb5471d6b95c6e/transformed/material-1.13.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/arkay/.gradle/caches/8.13/transforms/42b7c840dd6508ca646fad9a85b2468d/transformed/constraintlayout-2.2.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] /home/arkay/.gradle/caches/8.13/transforms/e3965e6b1a3ffe02b47e803743d4333d/transformed/appcompat-resources-1.7.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.1] /home/arkay/.gradle/caches/8.13/transforms/19fcaa8913f5d6c28e4a1b1afb17fb42/transformed/appcompat-1.7.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/41792c23a54d2e255893ce85dd21055a/transformed/recyclerview-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/arkay/.gradle/caches/8.13/transforms/d70013126726780c2bfd402379fd530f/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.5.4] /home/arkay/.gradle/caches/8.13/transforms/33c636ac9bc9f9a1b88c5b936f8d986a/transformed/fragment-1.5.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /home/arkay/.gradle/caches/8.13/transforms/8983b7196bb476d6b5b8af2f7455884f/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/c809d6fdeb9f1e6ba7b3ee5d3e2eb0e0/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/a792df9599d900fef35049c6c95a2937/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/ceaca5007752d4b1e048f246037ac198/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /home/arkay/.gradle/caches/8.13/transforms/8ae62eccccab7f6e1f60f6538af81833/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/78ce3a657fdad5a95745b4689cd0bd1b/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/40f8792b16b97ee2b8f5c3047f9652a1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/9a43b2360934d62045666f0bb8dc62fe/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/533bf78883f8f345464a6a27b8e52ade/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/d09d2a9b9ad771ab3e73d4978d6f1e44/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/3ccbafc7572becb13456f9392b58920a/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/a0ff2d8c8d87eb18895c8254beee5ee7/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/arkay/.gradle/caches/8.13/transforms/d9a29b897ce15840195926667b09dc5b/transformed/graphics-shapes-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/arkay/.gradle/caches/8.13/transforms/731641853b1651fef019d6fdb0536691/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c92ebb28670a8782cbcbdaff80e664bb/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/3ef1937a6e773fe245516716d45f08f2/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/a95ef4735674c5bf06ac1fc0304e9e3f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/3609dc30587d8dab9be4d5ab29a93d7a/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/49a40151f271ccb747eb8a17dc82e9aa/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/07cbff29f1c6b5013269e80f8bed0305/transformed/core-ktx-1.17.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/23966dd09c13e2ecd33e8657a3252cde/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/6a9162d4fc11138358c19f1e5d083bed/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/43f54ed27d97d47b7bb3aef99584bab1/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /home/arkay/.gradle/caches/8.13/transforms/9a72a8deeade2de492beb09fbf360b9f/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/33573acb89d1ffe67ad05e4d0018365c/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/ba5dcd5831eedcbce0bad82b900cbcfa/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/arkay/.gradle/caches/8.13/transforms/10e5d57d3187b0da328581770010f838/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/arkay/.gradle/caches/8.13/transforms/3e67a6ab49ba8a735472669588c366d0/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/352c487cc2435780419e9af167518432/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-29:19
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-29:19
+MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/2727cbabb6d28bd070fb5471d6b95c6e/transformed/material-1.13.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/2727cbabb6d28bd070fb5471d6b95c6e/transformed/material-1.13.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/arkay/.gradle/caches/8.13/transforms/42b7c840dd6508ca646fad9a85b2468d/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/arkay/.gradle/caches/8.13/transforms/42b7c840dd6508ca646fad9a85b2468d/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/43f54ed27d97d47b7bb3aef99584bab1/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/43f54ed27d97d47b7bb3aef99584bab1/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/ba5dcd5831eedcbce0bad82b900cbcfa/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/ba5dcd5831eedcbce0bad82b900cbcfa/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:13:9-41
+	android:fullBackupContent
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:11:9-54
+	android:roundIcon
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:16:9-53
+	android:dataExtractionRules
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:10:9-65
+activity#pl.anawoj.psm_lab9_anawoj.ShoutboxActivity
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:17:9-19:40
+	android:exported
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:18:13-45
+activity#pl.anawoj.psm_lab9_anawoj.LoginActivity
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:20:9-28:20
+	android:exported
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:22:13-36
+	android:name
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:21:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:26:27-74
+uses-sdk
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/2727cbabb6d28bd070fb5471d6b95c6e/transformed/material-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/2727cbabb6d28bd070fb5471d6b95c6e/transformed/material-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/arkay/.gradle/caches/8.13/transforms/42b7c840dd6508ca646fad9a85b2468d/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/arkay/.gradle/caches/8.13/transforms/42b7c840dd6508ca646fad9a85b2468d/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] /home/arkay/.gradle/caches/8.13/transforms/e3965e6b1a3ffe02b47e803743d4333d/transformed/appcompat-resources-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] /home/arkay/.gradle/caches/8.13/transforms/e3965e6b1a3ffe02b47e803743d4333d/transformed/appcompat-resources-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.1] /home/arkay/.gradle/caches/8.13/transforms/19fcaa8913f5d6c28e4a1b1afb17fb42/transformed/appcompat-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.1] /home/arkay/.gradle/caches/8.13/transforms/19fcaa8913f5d6c28e4a1b1afb17fb42/transformed/appcompat-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/41792c23a54d2e255893ce85dd21055a/transformed/recyclerview-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/41792c23a54d2e255893ce85dd21055a/transformed/recyclerview-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/arkay/.gradle/caches/8.13/transforms/d70013126726780c2bfd402379fd530f/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/arkay/.gradle/caches/8.13/transforms/d70013126726780c2bfd402379fd530f/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.5.4] /home/arkay/.gradle/caches/8.13/transforms/33c636ac9bc9f9a1b88c5b936f8d986a/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /home/arkay/.gradle/caches/8.13/transforms/33c636ac9bc9f9a1b88c5b936f8d986a/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /home/arkay/.gradle/caches/8.13/transforms/8983b7196bb476d6b5b8af2f7455884f/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /home/arkay/.gradle/caches/8.13/transforms/8983b7196bb476d6b5b8af2f7455884f/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/c809d6fdeb9f1e6ba7b3ee5d3e2eb0e0/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/c809d6fdeb9f1e6ba7b3ee5d3e2eb0e0/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/a792df9599d900fef35049c6c95a2937/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/a792df9599d900fef35049c6c95a2937/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/ceaca5007752d4b1e048f246037ac198/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/ceaca5007752d4b1e048f246037ac198/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /home/arkay/.gradle/caches/8.13/transforms/8ae62eccccab7f6e1f60f6538af81833/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/arkay/.gradle/caches/8.13/transforms/8ae62eccccab7f6e1f60f6538af81833/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/78ce3a657fdad5a95745b4689cd0bd1b/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/78ce3a657fdad5a95745b4689cd0bd1b/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/40f8792b16b97ee2b8f5c3047f9652a1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/40f8792b16b97ee2b8f5c3047f9652a1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/9a43b2360934d62045666f0bb8dc62fe/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/9a43b2360934d62045666f0bb8dc62fe/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/533bf78883f8f345464a6a27b8e52ade/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/533bf78883f8f345464a6a27b8e52ade/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/d09d2a9b9ad771ab3e73d4978d6f1e44/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/d09d2a9b9ad771ab3e73d4978d6f1e44/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/3ccbafc7572becb13456f9392b58920a/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/arkay/.gradle/caches/8.13/transforms/3ccbafc7572becb13456f9392b58920a/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/a0ff2d8c8d87eb18895c8254beee5ee7/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/a0ff2d8c8d87eb18895c8254beee5ee7/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/arkay/.gradle/caches/8.13/transforms/d9a29b897ce15840195926667b09dc5b/transformed/graphics-shapes-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/arkay/.gradle/caches/8.13/transforms/d9a29b897ce15840195926667b09dc5b/transformed/graphics-shapes-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/arkay/.gradle/caches/8.13/transforms/731641853b1651fef019d6fdb0536691/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/arkay/.gradle/caches/8.13/transforms/731641853b1651fef019d6fdb0536691/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c92ebb28670a8782cbcbdaff80e664bb/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c92ebb28670a8782cbcbdaff80e664bb/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/3ef1937a6e773fe245516716d45f08f2/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/3ef1937a6e773fe245516716d45f08f2/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/a95ef4735674c5bf06ac1fc0304e9e3f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/a95ef4735674c5bf06ac1fc0304e9e3f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/3609dc30587d8dab9be4d5ab29a93d7a/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/3609dc30587d8dab9be4d5ab29a93d7a/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/49a40151f271ccb747eb8a17dc82e9aa/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/49a40151f271ccb747eb8a17dc82e9aa/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/07cbff29f1c6b5013269e80f8bed0305/transformed/core-ktx-1.17.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/07cbff29f1c6b5013269e80f8bed0305/transformed/core-ktx-1.17.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/23966dd09c13e2ecd33e8657a3252cde/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/23966dd09c13e2ecd33e8657a3252cde/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/6a9162d4fc11138358c19f1e5d083bed/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/6a9162d4fc11138358c19f1e5d083bed/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/43f54ed27d97d47b7bb3aef99584bab1/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/43f54ed27d97d47b7bb3aef99584bab1/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /home/arkay/.gradle/caches/8.13/transforms/9a72a8deeade2de492beb09fbf360b9f/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /home/arkay/.gradle/caches/8.13/transforms/9a72a8deeade2de492beb09fbf360b9f/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/33573acb89d1ffe67ad05e4d0018365c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/33573acb89d1ffe67ad05e4d0018365c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/ba5dcd5831eedcbce0bad82b900cbcfa/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/ba5dcd5831eedcbce0bad82b900cbcfa/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/arkay/.gradle/caches/8.13/transforms/10e5d57d3187b0da328581770010f838/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/arkay/.gradle/caches/8.13/transforms/10e5d57d3187b0da328581770010f838/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/arkay/.gradle/caches/8.13/transforms/3e67a6ab49ba8a735472669588c366d0/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/arkay/.gradle/caches/8.13/transforms/3e67a6ab49ba8a735472669588c366d0/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/352c487cc2435780419e9af167518432/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/arkay/.gradle/caches/8.13/transforms/352c487cc2435780419e9af167518432/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/43f54ed27d97d47b7bb3aef99584bab1/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/arkay/.gradle/caches/8.13/transforms/43f54ed27d97d47b7bb3aef99584bab1/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/arkay/.gradle/caches/8.13/transforms/1eb7ca83a81ce6656810746aac35dbd0/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+permission#pl.anawoj.psm_lab9_anawoj.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+uses-permission#pl.anawoj.psm_lab9_anawoj.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /home/arkay/.gradle/caches/8.13/transforms/8ef2808ecc09ca0434377f413d25622a/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/arkay/.gradle/caches/8.13/transforms/c025695ee394b436e9f349e0fdde77e2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/arkay/.gradle/caches/8.13/transforms/625abae90a3af8bbb3ba2fe4e9c78a1f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92

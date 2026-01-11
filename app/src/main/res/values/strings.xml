@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shoutbox</string>
+    <string name="loginDec">Who are you?</string>
+    <string name="shoutbox">Shoutbox</string>
+</resources>
