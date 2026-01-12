@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:2:1-36:12
 MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/b34b425620ecb69ed37f5874c0248715/transformed/material-1.13.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/arkay/.gradle/caches/8.13/transforms/e42c44743446af9c8ee79b9a1af2dcf7/transformed/constraintlayout-2.2.1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] /home/arkay/.gradle/caches/8.13/transforms/7965f591c09695509bf90680a714a54b/transformed/appcompat-resources-1.7.1/AndroidManifest.xml:2:1-7:12
@@ -64,8 +64,8 @@ ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-32:19
-INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-32:19
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-34:19
+INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:8:5-34:19
 MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/b34b425620ecb69ed37f5874c0248715/transformed/material-1.13.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] /home/arkay/.gradle/caches/8.13/transforms/b34b425620ecb69ed37f5874c0248715/transformed/material-1.13.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/arkay/.gradle/caches/8.13/transforms/e42c44743446af9c8ee79b9a1af2dcf7/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
@@ -103,33 +103,37 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/arkay
 	android:dataExtractionRules
 		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:10:9-65
 activity#pl.anawoj.psm_lab9_anawoj.EditMessageActivity
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:17:9-19:40
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:17:9-20:40
+	android:windowSoftInputMode
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:19:13-55
 	android:exported
-		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:19:13-37
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:20:13-37
 	android:name
 		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:18:13-48
 activity#pl.anawoj.psm_lab9_anawoj.ShoutboxActivity
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:20:9-22:40
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:21:9-24:40
+	android:windowSoftInputMode
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:23:13-55
 	android:exported
-		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:22:13-37
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:21:13-45
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:22:13-45
 activity#pl.anawoj.psm_lab9_anawoj.LoginActivity
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:23:9-31:20
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:25:9-33:20
 	android:exported
-		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:25:13-36
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:24:13-42
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:26:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:31:27-74
 uses-sdk
 INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/arkay/Storage/Studia/psm_lab9_anawoj/app/src/main/AndroidManifest.xml

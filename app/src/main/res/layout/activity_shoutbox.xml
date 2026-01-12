@@ -5,96 +5,86 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundGray"
+    android:fitsSystemWindows="true"
     tools:context=".ShoutboxActivity">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipe_to_refresh_layout"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/backgroundGray">
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:fitsSystemWindows="false">
 
             <TextView
                 android:id="@+id/shoutboxTextView"
-                android:layout_width="0dp"
-                android:layout_height="37dp"
-                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/shoutbox"
                 android:textAlignment="center"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/black"
-                android:scrollbars="vertical"
-                app:layout_constraintBottom_toTopOf="@+id/send_button"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menu_button">
-
-            </androidx.recyclerview.widget.RecyclerView>
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/message_input"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:hint="hint"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/send_button"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+                android:textSize="24sp" />
 
             <ImageButton
                 android:id="@+id/menu_button"
                 android:layout_width="47dp"
                 android:layout_height="47dp"
+                android:layout_gravity="start|center_vertical"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
-                android:contentDescription="TODO"
-                android:src="@drawable/menu"
-                app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:contentDescription="menu"
+                android:src="@drawable/menu" />
+
+        </FrameLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_to_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fitsSystemWindows="false">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/message_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="hint" />
 
             <ImageButton
                 android:id="@+id/send_button"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="15dp"
-                android:contentDescription="TODO"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/message_input"
-                app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-                app:srcCompat="@drawable/send" />
+                android:src="@drawable/send"
+                android:contentDescription="send" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/drawerView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/backgroundDarkerGray"
         app:headerLayout="@layout/side_drawer_header"
         app:menu="@menu/side_drawer" />
 

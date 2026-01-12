@@ -32,10 +32,12 @@
         android:theme="@style/Theme.Psm_lab9_anawoj" >
         <activity
             android:name="pl.anawoj.psm_lab9_anawoj.EditMessageActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="pl.anawoj.psm_lab9_anawoj.ShoutboxActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="pl.anawoj.psm_lab9_anawoj.LoginActivity"
             android:exported="true" >

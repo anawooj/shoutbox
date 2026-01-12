@@ -16,9 +16,11 @@
         android:theme="@style/Theme.Psm_lab9_anawoj">
         <activity
             android:name=".EditMessageActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".ShoutboxActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.view.MenuItem
+import android.view.WindowManager
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.edit
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
@@ -243,7 +245,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         intent.putExtra("LOGIN", login)
         intent.putExtra("DATE", date)
         intent.putExtra("MESSAGE_CONTENT", messageContent)
-        intent.putExtra("ID", id) //TODO
+        intent.putExtra("ID", id)
         startActivity(intent)
     }
 
