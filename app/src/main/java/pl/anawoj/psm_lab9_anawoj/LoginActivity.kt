@@ -69,19 +69,18 @@ class LoginActivity : AppCompatActivity() {
 
             login = loginInput.getText().toString()
             saveData(login)
-            startShoutboxActivity(login)
+            startShoutboxActivity()
         }
     }
 
-    private fun startShoutboxActivity(login: String) {
+    private fun startShoutboxActivity() {
         val intent = Intent(this, ShoutboxActivity::class.java)
-        intent.putExtra("LOGIN", login)
         startActivity(intent)
     }
 
     private fun loadData() {
-        val login: String = sharedPreferences.getString("LOGIN", "default")!!
-        startShoutboxActivity(login)
+        login = sharedPreferences.getString("LOGIN", "default")!!
+        startShoutboxActivity()
     }
 
     private fun saveData(login: String?) {

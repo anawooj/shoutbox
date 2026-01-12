@@ -21,18 +21,17 @@ import com.google.android.material.navigation.NavigationView
 import com.google.android.material.textfield.TextInputEditText
 import pl.anawoj.psm_lab9_anawoj.json.MessageAPI
 import pl.anawoj.psm_lab9_anawoj.json.structure.MessageResponse
-import pl.anawoj.psm_lab9_anawoj.recycleview.MessageItem
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageAdapter
+import pl.anawoj.psm_lab9_anawoj.recycleview.MessageItem
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     SwipeRefreshLayout.OnRefreshListener {
 
     private lateinit var mRecyclerView: RecyclerView
-    private lateinit var mAdapter: RecyclerView.Adapter<MessageAdapter.MessageViewHolder>
+    private lateinit var mAdapter: MessageAdapter
     private lateinit var mLayoutManager: RecyclerView.LayoutManager
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var menuButton: ImageButton
@@ -41,7 +40,6 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     private lateinit var messageItemList: ArrayList<MessageItem>
     private lateinit var sendMessageButton: ImageButton
     private lateinit var messageInput: TextInputEditText
-    private lateinit var retrofitURL: Retrofit
     private lateinit var api: MessageAPI
     private lateinit var login: String
     private lateinit var swipeToRefreshLayout: SwipeRefreshLayout
@@ -54,26 +52,19 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 //        }
 //    }
     private var timeToRefresh = 300000
+    private val retrofitClient = RetrofitClient()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        init()
-        getMessageData()
-    }
-
-    private fun init() {
         sharedPreferences = getSharedPreferences("LOGIN", MODE_PRIVATE)
         login = sharedPreferences.getString("LOGIN", "default")!!
 
         messageItemList = ArrayList<MessageItem>()
 
-        retrofitURL = Retrofit.Builder()
-            .baseUrl("https://tgryl.pl/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
+        api = retrofitClient.getAPI()
 
-        api = retrofitURL.create<MessageAPI>(MessageAPI::class.java)
+        getMessageData()
     }
 
     private fun getMessageData() {
@@ -109,6 +100,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
             override fun onFailure(call: Call<List<MessageResponse?>>, t: Throwable) {
                 startLoginActivity("Disconnected from the internet")
+                println(t.toString())
             }
         })
     }
@@ -138,17 +130,18 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         mRecyclerView = findViewById(R.id.recyclerView)
         mRecyclerView.setHasFixedSize(true)
         mLayoutManager = LinearLayoutManager(this)
-        mAdapter = MessageAdapter(messageItemList.reversed() as ArrayList<MessageItem>)
-
-        mRecyclerView.addOnItemClickListener(object: OnItemClickListener {
-            override fun onItemClicked(position: Int, view: View) {
-                // Your logic
-                Toast.makeText(this@MainActivity, locationArrayList[position].locationName, Toast.LENGTH_SHORT).show()
-            }
-        })
-
+        mAdapter = MessageAdapter(messageItemList.reversed().toCollection(ArrayList()))
         mRecyclerView.setLayoutManager(mLayoutManager)
         mRecyclerView.setAdapter(mAdapter)
+
+
+        mAdapter.setOnClickListener(object : MessageAdapter.OnClickListener {
+            override fun onClick(position: Int, model: MessageItem) {
+                if (login == model.getLogin()) {
+                    startEditMessageActivity(model.getLogin(), model.getDate(), model.getContent())
+                }
+            }
+        })
     }
 
     private fun renderNavDrawer() {
@@ -167,7 +160,6 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-
         when (item.itemId) {
             R.id.nav_shoutbox -> drawerLayout.closeDrawer(GravityCompat.START)
             R.id.nav_settings -> {
@@ -207,7 +199,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                     val test: MessageResponse? = response.body()
                     Log.d(
                         "post successful",
-                        test?.getLogin().toString() + " " + test?.getContent().toString()
+                        test?.getLogin().toString() + " " + test?.getId().toString()
                     )
                     onRefresh()
                 }
@@ -216,7 +208,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                     call: Call<MessageResponse?>,
                     t: Throwable
                 ) {
-                    showErrors("Disconnected from the internet")
+                    showErrors("Disconnected from the internet"+t.toString())
                 }
             })
         } else {
@@ -231,6 +223,14 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     private fun startLoginActivity(error: String?) {
         val intent = Intent(this, LoginActivity::class.java)
         intent.putExtra("ERROR", error)
+        startActivity(intent)
+    }
+
+    private fun startEditMessageActivity(login: String, date: String, messageContent: String) {
+        val intent = Intent(this, EditMessageActivity::class.java)
+        intent.putExtra("LOGIN", login)
+        intent.putExtra("DATE", date)
+        intent.putExtra("MESSAGE_CONTENT", messageContent)
         startActivity(intent)
     }
 

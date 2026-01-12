@@ -3807,6 +3807,7 @@ id customPanel
 id cut
 id dateView
 id date_picker_actions
+id date_view
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3841,6 +3842,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id edit_button
 id edit_query
 id edit_text_id
 id elastic
@@ -3919,6 +3921,7 @@ id list_item
 id loginImage
 id loginInput
 id loginView
+id login_view
 id m3_side_sheet
 id main
 id marquee
@@ -3947,7 +3950,9 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id menu_button
+id menu_button2
 id message
+id message_content
 id message_input
 id middle
 id mini
@@ -4087,6 +4092,7 @@ id sharedValueSet
 id sharedValueUnset
 id shortcut
 id shoutboxTextView
+id shoutboxTextView2
 id showCustom
 id showHome
 id showTitle

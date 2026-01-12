@@ -3806,6 +3806,7 @@ int id customPanel 0x7f08008f
 int id cut 0x7f080090
 int id dateView 0x7f080091
 int id date_picker_actions 0x7f080092
+int id date_view 0x7f08021f
 int id decelerate 0x7f080093
 int id decelerateAndComplete 0x7f080094
 int id decor_content_parent 0x7f080095
@@ -3840,6 +3841,7 @@ int id easeInOut 0x7f0800b1
 int id easeOut 0x7f0800b2
 int id east 0x7f0800b3
 int id edge 0x7f0800b4
+int id edit_button 0x7f080220
 int id edit_query 0x7f0800b5
 int id edit_text_id 0x7f0800b6
 int id elastic 0x7f0800b7
@@ -3918,6 +3920,7 @@ int id list_item 0x7f0800ff
 int id loginImage 0x7f080100
 int id loginInput 0x7f080101
 int id loginView 0x7f080102
+int id login_view 0x7f080221
 int id m3_side_sheet 0x7f080103
 int id main 0x7f080104
 int id marquee 0x7f080105
@@ -3946,7 +3949,9 @@ int id material_timepicker_view 0x7f08011b
 int id material_value_index 0x7f08011c
 int id matrix 0x7f08011d
 int id menu_button 0x7f08011e
+int id menu_button2 0x7f080222
 int id message 0x7f08011f
+int id message_content 0x7f080223
 int id message_input 0x7f080120
 int id middle 0x7f080121
 int id mini 0x7f080122
@@ -4086,6 +4091,7 @@ int id sharedValueSet 0x7f0801a7
 int id sharedValueUnset 0x7f0801a8
 int id shortcut 0x7f0801a9
 int id shoutboxTextView 0x7f0801aa
+int id shoutboxTextView2 0x7f080224
 int id showCustom 0x7f0801ab
 int id showHome 0x7f0801ac
 int id showTitle 0x7f0801ad
