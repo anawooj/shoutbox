@@ -84,10 +84,6 @@
         "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/drawable/menu.png"
     },
     {
-        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-37:/layout_activity_shoutbox.xml.flat",
-        "source": "pl.anawoj.psm_lab9_anawoj.app-main-39:/layout/activity_shoutbox.xml"
-    },
-    {
         "merged": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-debug-37:/layout_activity_shoutbox.xml.flat",
         "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/layout/activity_shoutbox.xml"
     },

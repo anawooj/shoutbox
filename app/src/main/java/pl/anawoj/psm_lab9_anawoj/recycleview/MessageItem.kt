@@ -5,8 +5,9 @@ class MessageItem {
     private lateinit var login: String
     private lateinit var date: String
     private lateinit var content: String
+    private lateinit var id: String
 
-    constructor(login: String?, date: String?, content: String?) {
+    constructor(login: String?, date: String?, content: String?, id: String?) {
         if (login != null) {
             this.login = login
         }
@@ -15,6 +16,9 @@ class MessageItem {
         }
         if (content != null) {
             this.content = content
+        }
+        if (id != null) {
+            this.id = id
         }
     }
 
@@ -28,5 +32,9 @@ class MessageItem {
 
     fun getContent(): String {
         return content
+    }
+
+    fun getId(): String {
+        return id
     }
 }

@@ -3,6 +3,7 @@ package pl.anawoj.psm_lab9_anawoj
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.MenuItem
 import android.widget.ImageButton
@@ -25,7 +26,6 @@ import pl.anawoj.psm_lab9_anawoj.recycleview.MessageAdapter
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageItem
 import retrofit2.Call
 import retrofit2.Response
-import retrofit2.Retrofit
 
 class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     SwipeRefreshLayout.OnRefreshListener {
@@ -37,21 +37,21 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     private lateinit var menuButton: ImageButton
     private lateinit var navView: NavigationView
     private lateinit var sharedPreferences: SharedPreferences
-    private lateinit var messageItemList: ArrayList<MessageItem>
+    private var messageItemList = ArrayList<MessageItem>()
     private lateinit var sendMessageButton: ImageButton
     private lateinit var messageInput: TextInputEditText
     private lateinit var api: MessageAPI
     private lateinit var login: String
     private lateinit var swipeToRefreshLayout: SwipeRefreshLayout
 
-    //    private val handler: Handler = Handler()
-//    private val refresh: Runnable = object : Runnable {
-//        override fun run() {
-//            onRefresh()
-//            handler.postDelayed(this, timeToRefresh)
-//        }
-//    }
-    private var timeToRefresh = 300000
+    private val handler: Handler = Handler()
+    private val refresh: Runnable = object : Runnable {
+        override fun run() {
+            onRefresh()
+            handler.postDelayed(this, timeToRefresh)
+        }
+    }
+    private var timeToRefresh: Long = 10000
     private val retrofitClient = RetrofitClient()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,11 +60,10 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         sharedPreferences = getSharedPreferences("LOGIN", MODE_PRIVATE)
         login = sharedPreferences.getString("LOGIN", "default")!!
 
-        messageItemList = ArrayList<MessageItem>()
-
         api = retrofitClient.getAPI()
 
         getMessageData()
+        startAutoRefresher()
     }
 
     private fun getMessageData() {
@@ -85,7 +84,8 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                                 MessageItem(
                                     field?.getLogin(),
                                     field?.getDate(),
-                                    field?.getContent()
+                                    field?.getContent(),
+                                    field?.getId()
                                 )
                             )
                         }
@@ -138,7 +138,12 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         mAdapter.setOnClickListener(object : MessageAdapter.OnClickListener {
             override fun onClick(position: Int, model: MessageItem) {
                 if (login == model.getLogin()) {
-                    startEditMessageActivity(model.getLogin(), model.getDate(), model.getContent())
+                    startEditMessageActivity(
+                        model.getLogin(),
+                        model.getDate(),
+                        model.getContent(),
+                        model.getId()
+                    )
                 }
             }
         })
@@ -208,7 +213,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                     call: Call<MessageResponse?>,
                     t: Throwable
                 ) {
-                    showErrors("Disconnected from the internet"+t.toString())
+                    showErrors("Disconnected from the internet")
                 }
             })
         } else {
@@ -221,16 +226,24 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     }
 
     private fun startLoginActivity(error: String?) {
+        killAutoRefresher()
         val intent = Intent(this, LoginActivity::class.java)
         intent.putExtra("ERROR", error)
         startActivity(intent)
     }
 
-    private fun startEditMessageActivity(login: String, date: String, messageContent: String) {
+    private fun startEditMessageActivity(
+        login: String,
+        date: String,
+        messageContent: String,
+        id: String
+    ) {
+        killAutoRefresher()
         val intent = Intent(this, EditMessageActivity::class.java)
         intent.putExtra("LOGIN", login)
         intent.putExtra("DATE", date)
         intent.putExtra("MESSAGE_CONTENT", messageContent)
+        intent.putExtra("ID", id) //TODO
         startActivity(intent)
     }
 
@@ -242,8 +255,21 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
     override fun onRefresh() {
         swipeToRefreshLayout.isRefreshing = true
-//        resetAutoRefresher()
+        resetAutoRefresher()
         swipeToRefreshLayout.postDelayed(this::getMessageData, 1000)
         swipeToRefreshLayout.postDelayed({ swipeToRefreshLayout.isRefreshing = false }, 3000)
+    }
+
+    private fun startAutoRefresher() {
+        handler.postDelayed(refresh, timeToRefresh)
+    }
+
+    private fun resetAutoRefresher() {
+        handler.removeCallbacks(refresh)
+        handler.postDelayed(refresh, timeToRefresh)
+    }
+
+    private fun killAutoRefresher() {
+        handler.removeCallbacks(refresh)
     }
 }

@@ -5,9 +5,9 @@
     android:layout_height="wrap_content">
 
     <FrameLayout
-        android:background="@color/backgroundGray"
+        android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_width="match_parent" />
+        android:background="@color/backgroundGray" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

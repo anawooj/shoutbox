@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import pl.anawoj.psm_lab9_anawoj.R
-import pl.anawoj.psm_lab9_anawoj.json.structure.MessageResponse
 
 
 open class MessageAdapter(private val messageItemList: ArrayList<MessageItem>) :
@@ -50,6 +49,7 @@ open class MessageAdapter(private val messageItemList: ArrayList<MessageItem>) :
     fun setOnClickListener(listener: OnClickListener?) {
         this.onClickListener = listener
     }
+
     interface OnClickListener {
         fun onClick(position: Int, model: MessageItem)
     }

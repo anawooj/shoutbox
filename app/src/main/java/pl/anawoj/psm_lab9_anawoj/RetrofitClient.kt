@@ -6,14 +6,14 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitClient {
 
-    private val retrofitURL : Retrofit = Retrofit.Builder()
+    private val retrofitURL: Retrofit = Retrofit.Builder()
         .baseUrl("https://tgryl.pl/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
     private val api = retrofitURL.create(MessageAPI::class.java)
 
-    fun getAPI(): MessageAPI{
+    fun getAPI(): MessageAPI {
         return api
     }
 }

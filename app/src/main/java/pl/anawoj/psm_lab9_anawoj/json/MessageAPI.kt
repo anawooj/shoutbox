@@ -16,15 +16,17 @@ interface MessageAPI {
     @FormUrlEncoded
     @POST("shoutbox/message")
     fun setMessageInfo(
-        @Field("content") messageContent : String,
-        @Field("login") login : String) : Call<MessageResponse>
+        @Field("content") messageContent: String,
+        @Field("login") login: String
+    ): Call<MessageResponse>
 //        “content”: “treść wiadomości”,
 //        “login”: “nick użytkownika”
 
     @FormUrlEncoded
     @PUT("shoutbox/message/{id}")
     fun editMessageInfo(
-        @Path("id")
-        @Field("content") messageContent : String,
-        @Field("login") login : String) : Call<MessageResponse>
+        @Path("id") id: String,
+        @Field("content") messageContent: String,
+        @Field("login") login: String
+    ): Call<MessageResponse>
 }
