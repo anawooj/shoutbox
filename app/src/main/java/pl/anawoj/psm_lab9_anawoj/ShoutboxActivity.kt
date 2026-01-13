@@ -17,6 +17,7 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -149,6 +150,8 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 }
             }
         })
+
+        swipeToDelete(model.getLogin())
     }
 
     private fun renderNavDrawer() {
@@ -247,6 +250,14 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         intent.putExtra("MESSAGE_CONTENT", messageContent)
         intent.putExtra("ID", id)
         startActivity(intent)
+    }
+
+    private fun swipeToDelete(messageLogin : String){
+
+        if (login == messageLogin){
+            val itemTouchHelper = ItemTouchHelper(mAdapter.getTouchCallback())
+            itemTouchHelper.attachToRecyclerView(mRecyclerView);
+        }
     }
 
     private fun destroySharedPrefs() {
