@@ -28,6 +28,7 @@ class EditMessageActivity : AppCompatActivity() {
     private lateinit var api: MessageAPI
     private lateinit var id: String
     private lateinit var menuButton: ImageButton
+    private lateinit var deleteButton : ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +50,7 @@ class EditMessageActivity : AppCompatActivity() {
         discardButton = findViewById(R.id.cancel_button)
         editButton = findViewById(R.id.edit_button)
         menuButton = findViewById(R.id.menu_button2)
+        deleteButton = findViewById(R.id.delete_button)
 
         loginTextView.text = intent.extras?.getString("LOGIN")
         dateTextView.text = intent.extras?.getString("DATE")
@@ -61,6 +63,11 @@ class EditMessageActivity : AppCompatActivity() {
         editButton.setOnClickListener {
             editMessage()
         }
+        deleteButton.setOnClickListener {
+            deleteMessage()
+        }
+
+        api = retrofitClient.getAPI()
     }
 
     private fun startShoutboxActivity() {
@@ -72,8 +79,6 @@ class EditMessageActivity : AppCompatActivity() {
 
         val editedMessage = messageContentTextInput.text.toString()
 
-        api = retrofitClient.getAPI()
-
         val call = api.editMessageInfo(id, editedMessage, loginTextView.text.toString())
 
         call.enqueue(object : retrofit2.Callback<MessageResponse> {
@@ -84,6 +89,31 @@ class EditMessageActivity : AppCompatActivity() {
                 val test: MessageResponse? = response.body()
                 Log.d(
                     "edit successful",
+                    test?.getLogin().toString() + " " + test?.getContent().toString()
+                )
+                startShoutboxActivity()
+            }
+
+            override fun onFailure(
+                call: Call<MessageResponse?>,
+                t: Throwable
+            ) {
+                showErrors("Disconnected from the internet")
+            }
+        })
+    }
+
+    private fun deleteMessage(){
+        val call = api.deleteMessageInfo(id)
+
+        call.enqueue(object : retrofit2.Callback<MessageResponse> {
+            override fun onResponse(
+                call: Call<MessageResponse?>,
+                response: Response<MessageResponse?>
+            ) {
+                val test: MessageResponse? = response.body()
+                Log.d(
+                    "delete successful",
                     test?.getLogin().toString() + " " + test?.getContent().toString()
                 )
                 startShoutboxActivity()

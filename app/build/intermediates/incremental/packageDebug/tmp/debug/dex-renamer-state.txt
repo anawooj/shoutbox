@@ -1,15 +1,15 @@
-#Mon Jan 12 13:55:00 CET 2026
-base.0=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
-base.3=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.4=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
-base.5=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
-base.6=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Tue Jan 13 10:49:13 CET 2026
+base.0=C\:\\Users\\student\\StudioProjects\\shoutbox\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\student\\StudioProjects\\shoutbox\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\student\\StudioProjects\\shoutbox\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\student\\StudioProjects\\shoutbox\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=C\:\\Users\\student\\StudioProjects\\shoutbox\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.5=C\:\\Users\\student\\StudioProjects\\shoutbox\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.6=C\:\\Users\\student\\StudioProjects\\shoutbox\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
-path.2=1/classes.dex
-path.3=10/classes.dex
+path.2=10/classes.dex
+path.3=1/classes.dex
 path.4=3/classes.dex
 path.5=5/classes.dex
 path.6=classes2.dex

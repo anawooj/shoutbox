@@ -5,6 +5,7 @@ color backgroundGray
 color black
 color ic_launcher_background
 color white
+drawable delete
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable menu
@@ -14,8 +15,10 @@ id cancel_button
 id contentView
 id dateView
 id date_view
+id delete_button
 id drawerView
 id edit_button
+id imageButton3
 id imageView
 id loginImage
 id loginInput
