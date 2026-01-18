@@ -6,6 +6,7 @@ color black
 color ic_launcher_background
 color white
 drawable delete
+drawable ic_delete_white_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable menu

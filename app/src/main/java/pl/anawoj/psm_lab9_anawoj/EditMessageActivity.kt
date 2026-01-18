@@ -16,19 +16,22 @@ import pl.anawoj.psm_lab9_anawoj.json.MessageAPI
 import pl.anawoj.psm_lab9_anawoj.json.structure.MessageResponse
 import retrofit2.Call
 import retrofit2.Response
+import kotlin.toString
 
 class EditMessageActivity : AppCompatActivity() {
 
+    // initialized classes
+    private var calls = Calls()
+
+    // view
     private lateinit var loginTextView: TextView
     private lateinit var dateTextView: TextView
     private lateinit var messageContentTextInput: TextInputEditText
     private lateinit var discardButton: Button
     private lateinit var editButton: Button
-    private val retrofitClient = RetrofitClient()
-    private lateinit var api: MessageAPI
-    private lateinit var id: String
     private lateinit var menuButton: ImageButton
     private lateinit var deleteButton : ImageButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,80 +58,25 @@ class EditMessageActivity : AppCompatActivity() {
         loginTextView.text = intent.extras?.getString("LOGIN")
         dateTextView.text = intent.extras?.getString("DATE")
         messageContentTextInput.setText(intent.extras?.getString("MESSAGE_CONTENT"))
-        id = intent.extras?.getString("ID").toString()
+        val id = intent.extras?.getString("ID").toString()
 
         discardButton.setOnClickListener {
             startShoutboxActivity()
         }
         editButton.setOnClickListener {
-            editMessage()
+            val editedMessage = messageContentTextInput.text.toString()
+            val login = loginTextView.text.toString()
+            calls.editMessage(id, editedMessage, login)
+            startShoutboxActivity()
         }
         deleteButton.setOnClickListener {
-            deleteMessage()
+            calls.deleteMessage(id)
+            startShoutboxActivity()
         }
-
-        api = retrofitClient.getAPI()
     }
 
-    private fun startShoutboxActivity() {
+    fun startShoutboxActivity() {
         val intent = Intent(this, ShoutboxActivity::class.java)
         startActivity(intent)
-    }
-
-    private fun editMessage() {
-
-        val editedMessage = messageContentTextInput.text.toString()
-
-        val call = api.editMessageInfo(id, editedMessage, loginTextView.text.toString())
-
-        call.enqueue(object : retrofit2.Callback<MessageResponse> {
-            override fun onResponse(
-                call: Call<MessageResponse?>,
-                response: Response<MessageResponse?>
-            ) {
-                val test: MessageResponse? = response.body()
-                Log.d(
-                    "edit successful",
-                    test?.getLogin().toString() + " " + test?.getContent().toString()
-                )
-                startShoutboxActivity()
-            }
-
-            override fun onFailure(
-                call: Call<MessageResponse?>,
-                t: Throwable
-            ) {
-                showErrors("Disconnected from the internet")
-            }
-        })
-    }
-
-    private fun deleteMessage(){
-        val call = api.deleteMessageInfo(id)
-
-        call.enqueue(object : retrofit2.Callback<MessageResponse> {
-            override fun onResponse(
-                call: Call<MessageResponse?>,
-                response: Response<MessageResponse?>
-            ) {
-                val test: MessageResponse? = response.body()
-                Log.d(
-                    "delete successful",
-                    test?.getLogin().toString() + " " + test?.getContent().toString()
-                )
-                startShoutboxActivity()
-            }
-
-            override fun onFailure(
-                call: Call<MessageResponse?>,
-                t: Throwable
-            ) {
-                showErrors("Disconnected from the internet")
-            }
-        })
-    }
-
-    private fun showErrors(error: String?) {
-        Toast.makeText(this, error, Toast.LENGTH_SHORT).show()
     }
 }

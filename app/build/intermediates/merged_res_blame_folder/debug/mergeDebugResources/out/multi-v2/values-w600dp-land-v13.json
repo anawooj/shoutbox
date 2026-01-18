@@ -4,7 +4,7 @@
             "outputFile": "pl.anawoj.psm_lab9_anawoj.app-mergeDebugResources-35:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\student\\.gradle\\caches\\8.13\\transforms\\b34b425620ecb69ed37f5874c0248715\\transformed\\material-1.13.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "/home/arkay/.gradle/caches/8.13/transforms/b34b425620ecb69ed37f5874c0248715/transformed/material-1.13.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

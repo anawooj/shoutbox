@@ -4,7 +4,7 @@
             "outputFile": "pl.anawoj.psm_lab9_anawoj.app-mergeDebugResources-35:/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\student\\.gradle\\caches\\8.13\\transforms\\f3e7b053138c4d2f0d9dc8278bb52d2b\\transformed\\appcompat-1.7.1\\res\\values-v25\\values-v25.xml",
+                    "source": "/home/arkay/.gradle/caches/8.13/transforms/f3e7b053138c4d2f0d9dc8278bb52d2b/transformed/appcompat-1.7.1/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

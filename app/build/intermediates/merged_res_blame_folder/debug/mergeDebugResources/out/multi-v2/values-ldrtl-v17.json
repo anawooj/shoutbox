@@ -4,7 +4,7 @@
             "outputFile": "pl.anawoj.psm_lab9_anawoj.app-mergeDebugResources-35:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\student\\.gradle\\caches\\8.13\\transforms\\b34b425620ecb69ed37f5874c0248715\\transformed\\material-1.13.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "/home/arkay/.gradle/caches/8.13/transforms/b34b425620ecb69ed37f5874c0248715/transformed/material-1.13.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

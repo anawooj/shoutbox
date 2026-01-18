@@ -13,7 +13,7 @@ import pl.anawoj.psm_lab9_anawoj.R
 import pl.anawoj.psm_lab9_anawoj.ShoutboxActivity
 
 
-open class MessageAdapter(private val messageItemList: ArrayList<MessageItem>) :
+open class MessageAdapter(private val messageItemList: List<MessageItem>) :
     RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() {
 
     private var onClickListener: OnClickListener? = null
@@ -57,33 +57,5 @@ open class MessageAdapter(private val messageItemList: ArrayList<MessageItem>) :
 
     interface OnClickListener {
         fun onClick(position: Int, model: MessageItem)
-    }
-
-    var simpleItemTouchCallback: ItemTouchHelper.SimpleCallback = object :
-        ItemTouchHelper.SimpleCallback(
-            0,
-            ItemTouchHelper.LEFT
-        ) {
-
-        override fun onMove(
-            recyclerView: RecyclerView,
-            viewHolder: RecyclerView.ViewHolder,
-            target: RecyclerView.ViewHolder
-        ): Boolean {
-            return false
-        }
-
-        override fun onSwiped(
-            viewHolder: RecyclerView.ViewHolder,
-            direction: Int
-        ) {
-            // nowa klasa z jedną do usuwania tegesu
-            // jakies fajne tło no tego
-            // sprawdzanie użytkownika
-        }
-    }
-
-    fun getTouchCallback(): ItemTouchHelper.SimpleCallback {
-        return simpleItemTouchCallback
     }
 }
