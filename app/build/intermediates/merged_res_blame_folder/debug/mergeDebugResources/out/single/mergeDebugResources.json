@@ -4,6 +4,10 @@
         "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-37:/layout_activity_edit_message.xml.flat",
+        "source": "pl.anawoj.psm_lab9_anawoj.app-main-39:/layout/activity_edit_message.xml"
+    },
+    {
         "merged": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-debug-37:/drawable_send.png.flat",
         "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/drawable/send.png"
     },
@@ -56,6 +60,10 @@
         "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/drawable/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-debug-37:/drawable_ic_delete_white_24.xml.flat",
+        "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/drawable/ic_delete_white_24.xml"
+    },
+    {
         "merged": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-debug-37:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -98,10 +106,6 @@
     {
         "merged": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-debug-37:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-main-39:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "pl.anawoj.psm_lab9_anawoj.app-debug-37:/drawable_ic_delete_white_24.xml.flat",
-        "source": "pl.anawoj.psm_lab9_anawoj.app-main-39:/drawable/ic_delete_white_24.xml"
     },
     {
         "merged": "/home/arkay/.gradle/daemon/8.13/pl.anawoj.psm_lab9_anawoj.app-debug-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
