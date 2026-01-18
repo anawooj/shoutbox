@@ -1,6 +1,5 @@
 package pl.anawoj.psm_lab9_anawoj
 
-import android.R.attr.background
 import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Canvas
@@ -13,6 +12,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.MenuItem
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,20 +22,27 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
+import pl.anawoj.psm_lab9_anawoj.networking.Calls
+import pl.anawoj.psm_lab9_anawoj.networking.MyViewModel
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageAdapter
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageItem
+import androidx.core.graphics.toColorInt
 
 class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     SwipeRefreshLayout.OnRefreshListener {
 
     // initialized classes
     private val calls = Calls()
+    private val common = Common()
     private val handler: Handler = Handler()
 
     // view
@@ -73,12 +80,13 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         startAutoRefresher()
     }
 
-    fun callGetMessageData(){
+    fun callGetMessageData() {
         calls.getMessageData { list ->
             messagesList = ArrayList(list)
             renderRecyclerView()
         }
     }
+
     fun renderActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_shoutbox)
@@ -101,10 +109,15 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             onRefresh()
         }
 
+        val linearLayout = findViewById<LinearLayout>(R.id.linear_layout)
+
+        val mySnackbar = common.makeSnackbarNoInternet(linearLayout)
+        common.checkInternetConnection(mySnackbar, this)
+
         renderNavDrawer()
     }
 
-    private fun renderRecyclerView(){
+    private fun renderRecyclerView() {
 
         mRecyclerView = findViewById(R.id.recyclerView)
         mRecyclerView.setHasFixedSize(true)
@@ -128,13 +141,15 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
         ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
 
-            private val deleteIcon = ContextCompat.getDrawable(this@ShoutboxActivity, R.drawable.ic_delete_white_24)
+            private val deleteIcon =
+                ContextCompat.getDrawable(this@ShoutboxActivity, R.drawable.ic_delete_white_24)
             private val intrinsicWidth = deleteIcon.intrinsicWidth
             private val intrinsicHeight = deleteIcon.intrinsicHeight
             private val background = ColorDrawable()
-            private val backgroundColor = Color.parseColor("#f44336")
-            private val clearPaint = Paint().apply { xfermode =
-                PorterDuffXfermode(PorterDuff.Mode.CLEAR)
+            private val backgroundColor = "#f44336".toColorInt()
+            private val clearPaint = Paint().apply {
+                xfermode =
+                    PorterDuffXfermode(PorterDuff.Mode.CLEAR)
             }
 
             override fun onChildDraw(
@@ -152,31 +167,66 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 val isCanceled = dX == 0f && !isCurrentlyActive
 
                 if (isCanceled) {
-                    clearCanvas(c, itemView.right + dX, itemView.top.toFloat(), itemView.right.toFloat(), itemView.bottom.toFloat())
-                    super.onChildDraw(c, mRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
+                    clearCanvas(
+                        c,
+                        itemView.right + dX,
+                        itemView.top.toFloat(),
+                        itemView.right.toFloat(),
+                        itemView.bottom.toFloat()
+                    )
+                    super.onChildDraw(
+                        c,
+                        mRecyclerView,
+                        viewHolder,
+                        dX,
+                        dY,
+                        actionState,
+                        false
+                    )
                     return
                 }
 
-                // Draw the red delete background
                 background.color = backgroundColor
-                background.setBounds(itemView.right + dX.toInt(), itemView.top, itemView.right, itemView.bottom)
+                background.setBounds(
+                    itemView.right + dX.toInt(),
+                    itemView.top,
+                    itemView.right,
+                    itemView.bottom
+                )
                 background.draw(c)
 
-                // Calculate position of delete icon
                 val deleteIconTop = itemView.top + (itemHeight - intrinsicHeight) / 2
                 val deleteIconMargin = (itemHeight - intrinsicHeight) / 2
                 val deleteIconLeft = itemView.right - deleteIconMargin - intrinsicWidth
                 val deleteIconRight = itemView.right - deleteIconMargin
                 val deleteIconBottom = deleteIconTop + intrinsicHeight
 
-                // Draw the delete icon
-                deleteIcon.setBounds(deleteIconLeft, deleteIconTop, deleteIconRight, deleteIconBottom)
-                deleteIcon.draw(c)
+                deleteIcon?.setBounds(
+                    deleteIconLeft,
+                    deleteIconTop,
+                    deleteIconRight,
+                    deleteIconBottom
+                )
+                deleteIcon?.draw(c)
 
-                super.onChildDraw(c, mRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
+                super.onChildDraw(
+                    c,
+                    mRecyclerView,
+                    viewHolder,
+                    dX,
+                    dY,
+                    actionState,
+                    isCurrentlyActive
+                )
             }
 
-            private fun clearCanvas(c: Canvas?, left: Float, top: Float, right: Float, bottom: Float) {
+            private fun clearCanvas(
+                c: Canvas?,
+                left: Float,
+                top: Float,
+                right: Float,
+                bottom: Float
+            ) {
                 c?.drawRect(left, top, right, bottom, clearPaint)
             }
 
@@ -188,13 +238,15 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 return false
             }
 
-            override fun getSwipeDirs(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder): Int {
+            override fun getSwipeDirs(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder
+            ): Int {
                 val position: MessageItem = messagesList[viewHolder.adapterPosition]
 
-                return if(login != position.getLogin()){
+                return if (login != position.getLogin()) {
                     0
-                }
-                else {
+                } else {
                     super.getSwipeDirs(recyclerView, viewHolder)
                 }
             }
@@ -286,9 +338,5 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
     private fun killAutoRefresher() {
         handler.removeCallbacks(refresh)
-    }
-
-    fun showErrors(error: String?) {
-        Toast.makeText(this, error, Toast.LENGTH_SHORT).show()
     }
 }

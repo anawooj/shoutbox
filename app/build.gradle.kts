@@ -52,4 +52,5 @@ dependencies {
     implementation (libs.retrofit)
     implementation (libs.converter.gson)
     implementation(libs.androidx.swiperefreshlayout)
+    implementation(libs.androidx.core.splashscreen)
 }

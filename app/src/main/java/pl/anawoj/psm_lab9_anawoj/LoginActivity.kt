@@ -7,31 +7,49 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.edit
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.textfield.TextInputEditText
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import pl.anawoj.psm_lab9_anawoj.R.id
 import pl.anawoj.psm_lab9_anawoj.R.layout
-
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class LoginActivity : AppCompatActivity() {
 
+    // ic
+    private val common = Common()
+
+    //view
     private lateinit var setLoginButton: Button
     private lateinit var loginInput: TextInputEditText
+    private lateinit var cLayout: ConstraintLayout
+
+    //values
     private lateinit var login: String
     private lateinit var sharedPreferences: SharedPreferences
+    private var keepSplash = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val splashScreen = installSplashScreen()
+        splashScreen.setKeepOnScreenCondition { keepSplash }
+
         super.onCreate(savedInstanceState)
 
-        init()
+        lifecycleScope.launch {
+            delay(3000)
+            keepSplash = false
+        }
+
+        sharedPreferences = getSharedPreferences("LOGIN", MODE_PRIVATE)
+
         getError()
         autoLogin()
-    }
-
-    private fun init() {
-        sharedPreferences = getSharedPreferences("LOGIN", MODE_PRIVATE)
     }
 
     private fun getError() {
@@ -39,14 +57,14 @@ class LoginActivity : AppCompatActivity() {
         val errorMessage: String? = intent.getStringExtra("ERROR")
 
         if (!errorMessage.equals(null)) {
-            destroySharedPrefs()
+            common.destroySharedPrefs()
             renderActivity()
             Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun autoLogin() {
-        if (sharedPreferences.contains("LOGIN")) {
+        if (sharedPreferences.contains("LOGIN") && common.isInternetConnection == true) {
             loadData()
         } else {
             renderActivity()
@@ -62,14 +80,26 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
+        cLayout = findViewById(id.clayout)
+        val mySnackbar = common.makeSnackbarNoInternet(cLayout)
+
         setLoginButton = findViewById(id.setLogin)
         loginInput = findViewById(id.loginInput)
 
-        setLoginButton.setOnClickListener {
+        common.checkInternetConnection(mySnackbar, this)
 
+        setLoginButton.setOnClickListener {
             login = loginInput.getText().toString()
-            saveData(login)
-            startShoutboxActivity()
+
+            if (common.isInternetConnection == true) {
+                saveData(login)
+                startShoutboxActivity()
+            } else {
+                mySnackbar.show()
+            }
+            if (login.isEmpty() || login.length > 256) {
+                common.showError("Invalid login", cLayout, 3000)
+            }
         }
     }
 
@@ -86,12 +116,6 @@ class LoginActivity : AppCompatActivity() {
     private fun saveData(login: String?) {
         sharedPreferences.edit {
             putString("LOGIN", login)
-        }
-    }
-
-    private fun destroySharedPrefs() {
-        sharedPreferences.edit {
-            clear()
         }
     }
 }
