@@ -103,16 +103,21 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         sendMessageButton = findViewById(R.id.send_button)
 
         sendMessageButton.setOnClickListener {
-            val messageContent = messageInput.getText()?.trim().toString()
-            calls.sendMessage(messageContent, login)
-            messageInput.text = null
-            onRefresh()
+            if(common.isInternetConnection == true){
+                val messageContent = messageInput.getText()?.trim().toString()
+                calls.sendMessage(messageContent, login)
+                messageInput.text = null
+                onRefresh()
+            }
         }
 
         val linearLayout = findViewById<LinearLayout>(R.id.linear_layout)
 
         val mySnackbar = common.makeSnackbarNoInternet(linearLayout)
-        common.checkInternetConnection(mySnackbar, this)
+
+        common.observeInternetConnection(owner = this,
+            onDisconnectedUI = { mySnackbar.show() },
+            onConnectedUI = { mySnackbar.dismiss() })
 
         renderNavDrawer()
     }

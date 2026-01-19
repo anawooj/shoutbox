@@ -48,6 +48,10 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="pl.anawoj.psm_lab9_anawoj.androidx-startup"

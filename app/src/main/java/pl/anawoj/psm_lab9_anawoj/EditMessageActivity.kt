@@ -63,7 +63,10 @@ class EditMessageActivity : AppCompatActivity() {
         val id = intent.extras?.getString("ID").toString()
 
         val mySnackbar = common.makeSnackbarNoInternet(conLayout)
-        common.checkInternetConnection(mySnackbar, this)
+
+        common.observeInternetConnection(owner = this,
+            onDisconnectedUI = { mySnackbar.show() },
+            onConnectedUI = { mySnackbar.dismiss() })
 
         discardButton.setOnClickListener {
             startShoutboxActivity()

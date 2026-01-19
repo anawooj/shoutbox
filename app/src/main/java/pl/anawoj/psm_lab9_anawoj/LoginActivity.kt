@@ -36,6 +36,8 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
+        sharedPreferences = getSharedPreferences("LOGIN", MODE_PRIVATE)
+
         val splashScreen = installSplashScreen()
         splashScreen.setKeepOnScreenCondition { keepSplash }
 
@@ -46,8 +48,6 @@ class LoginActivity : AppCompatActivity() {
             keepSplash = false
         }
 
-        sharedPreferences = getSharedPreferences("LOGIN", MODE_PRIVATE)
-
         getError()
         autoLogin()
     }
@@ -57,18 +57,21 @@ class LoginActivity : AppCompatActivity() {
         val errorMessage: String? = intent.getStringExtra("ERROR")
 
         if (!errorMessage.equals(null)) {
-            common.destroySharedPrefs()
+            destroySharedPrefs()
             renderActivity()
             Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun autoLogin() {
-        if (sharedPreferences.contains("LOGIN") && common.isInternetConnection == true) {
-            loadData()
-        } else {
-            renderActivity()
-        }
+        common.observeInternetConnection(owner = this, onStatusChanged = { isConnected ->
+                if (sharedPreferences.contains("LOGIN") && isConnected)
+                    loadData()
+                else
+                    destroySharedPrefs()
+                    renderActivity()
+            }
+        )
     }
 
     private fun renderActivity() {
@@ -86,7 +89,9 @@ class LoginActivity : AppCompatActivity() {
         setLoginButton = findViewById(id.setLogin)
         loginInput = findViewById(id.loginInput)
 
-        common.checkInternetConnection(mySnackbar, this)
+        common.observeInternetConnection(owner = this,
+            onDisconnectedUI = { mySnackbar.show() },
+            onConnectedUI = { mySnackbar.dismiss() })
 
         setLoginButton.setOnClickListener {
             login = loginInput.getText().toString()
@@ -116,6 +121,12 @@ class LoginActivity : AppCompatActivity() {
     private fun saveData(login: String?) {
         sharedPreferences.edit {
             putString("LOGIN", login)
+        }
+    }
+
+    private fun destroySharedPrefs() {
+        sharedPreferences.edit {
+            clear()
         }
     }
 }

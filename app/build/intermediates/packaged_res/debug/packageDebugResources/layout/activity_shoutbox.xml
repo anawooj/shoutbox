@@ -9,22 +9,24 @@
     tools:context=".ShoutboxActivity">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fitsSystemWindows="false"
             android:paddingTop="30dp"
-            android:paddingBottom="10dp"
-            android:fitsSystemWindows="false">
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/shoutboxTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/sulphur_point"
                 android:text="@string/shoutbox"
                 android:textAlignment="center"
                 android:textSize="24sp" />
@@ -67,14 +69,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/courier_prime"
                 android:hint="hint" />
 
             <ImageButton
                 android:id="@+id/send_button"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/send"
-                android:contentDescription="send" />
+                android:contentDescription="send"
+                android:src="@drawable/send" />
 
         </LinearLayout>
 

@@ -26,6 +26,7 @@
                 android:id="@+id/shoutboxTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/sulphur_point"
                 android:text="@string/shoutbox"
                 android:textAlignment="center"
                 android:textSize="24sp" />
@@ -68,6 +69,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/courier_prime"
                 android:hint="hint" />
 
             <ImageButton

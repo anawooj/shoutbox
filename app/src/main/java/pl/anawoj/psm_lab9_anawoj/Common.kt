@@ -16,11 +16,10 @@ import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_INDEFI
 import com.google.android.material.snackbar.Snackbar
 import pl.anawoj.psm_lab9_anawoj.networking.MyViewModel
 
-class Common() : AppCompatActivity(){
+class Common() : AppCompatActivity() {
 
-    private lateinit var sharedPreferences: SharedPreferences
-    var isInternetConnection : Boolean? = null
-        private set
+    private lateinit var vm: MyViewModel
+    var isInternetConnection: Boolean? = null
 
 
     fun startShoutboxActivity() {
@@ -28,32 +27,35 @@ class Common() : AppCompatActivity(){
         startActivity(intent)
     }
 
-    fun destroySharedPrefs() {
-        sharedPreferences.edit {
-            clear()
-        }
-    }
-
-    fun showError(error : String, view : ConstraintLayout, duration : Int){
+    fun showError(error: String, view: ConstraintLayout, duration: Int) {
         val mySnackbar = Snackbar.make(view, error, duration).show()
     }
 
-    fun makeSnackbarNoInternet(layout : View): Snackbar {
+    fun makeSnackbarNoInternet(layout: View): Snackbar {
         return Snackbar.make(layout, "Disconnected from the internet", LENGTH_INDEFINITE)
     }
 
-    fun checkInternetConnection(mySnackbar : Snackbar, owner : ViewModelStoreOwner) {
+    fun observeInternetConnection(
+        owner: LifecycleOwner,
+        onStatusChanged: ((Boolean) -> Unit)? = null,
+        onDisconnectedUI: (() -> Unit)? = null,
+        onConnectedUI: (() -> Unit)? = null
+    ) {
+        vm = ViewModelProvider(owner as ViewModelStoreOwner)[MyViewModel::class.java]
 
-        val vm: MyViewModel = ViewModelProvider(owner)[MyViewModel::class.java]
+        vm.connected.observe(owner) { connected ->
+            val isConnected = connected == true
 
-        vm.connected.observe(owner as LifecycleOwner, Observer { connected: Boolean? ->
-            if (!connected!!) {
-                isInternetConnection = false
-                mySnackbar.show()
+            isInternetConnection = isConnected
+            onStatusChanged?.invoke(isConnected)
+
+            if (!isConnected) {
+                onDisconnectedUI?.invoke()
             } else {
-                isInternetConnection = true
-                mySnackbar.dismiss()
+                onConnectedUI?.invoke()
             }
-        })
+        }
     }
+
+
 }

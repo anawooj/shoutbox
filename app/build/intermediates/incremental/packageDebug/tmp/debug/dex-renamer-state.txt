@@ -1,11 +1,11 @@
-#Sun Jan 18 13:47:51 CET 2026
-base.0=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
-base.3=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.4=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
-base.5=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
-base.6=/home/arkay/Storage/Studia/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Mon Jan 19 12:20:42 CET 2026
+base.0=/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.3=/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+base.4=/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
+base.5=/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+base.6=/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=1/classes.dex

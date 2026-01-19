@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "pl.anawoj.psm_lab9_anawoj.app-mergeDebugResources-36:/values-night-v33/values-night-v33.xml",
+            "map": [
+                {
+                    "source": "/home/arkay/.gradle/caches/8.13/transforms/f415793f52edeffb6a691bfe4b608b6c/transformed/core-splashscreen-1.2.0/res/values-night-v33/values-night-v33.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "215"
+                    }
+                }
+            ]
+        }
+    ]
+}
