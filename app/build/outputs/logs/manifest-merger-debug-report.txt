@@ -100,7 +100,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/arkay
 	android:allowBackup
 		ADDED from /home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:16:9-53
+		ADDED from /home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:16:9-50
 	android:dataExtractionRules
 		ADDED from /home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:10:9-65
 activity#pl.anawoj.psm_lab9_anawoj.EditMessageActivity

@@ -47,8 +47,8 @@
 30        android:supportsRtl="true"
 30-->/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:15:9-35
 31        android:testOnly="true"
-32        android:theme="@style/Theme.Psm_lab9_anawoj" >
-32-->/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:16:9-53
+32        android:theme="@style/Theme.App.Starting" >
+32-->/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:16:9-50
 33        <activity
 33-->/home/arkay/Storage/Studia/psm/psm_lab9_anawoj/app/src/main/AndroidManifest.xml:17:9-20:40
 34            android:name="pl.anawoj.psm_lab9_anawoj.EditMessageActivity"
