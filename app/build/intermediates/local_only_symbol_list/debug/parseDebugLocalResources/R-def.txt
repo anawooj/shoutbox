@@ -3,12 +3,12 @@ local
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
-array preloaded_fonts
 color backgroundDarkerGray
 color backgroundGray
 color black
 color ic_launcher_background
 color white
+drawable app_icon_512
 drawable delete
 drawable ic_delete_white_24
 drawable ic_launcher_background
@@ -18,7 +18,6 @@ drawable menu
 drawable send
 drawable talk_bubbles
 font courier_prime
-font saira
 font sulphur_point
 id cancel_button
 id clayout
@@ -37,6 +36,7 @@ id loginInput
 id loginView
 id login_view
 id main
+id main_shoutbox
 id menu_button
 id menu_button2
 id message_content

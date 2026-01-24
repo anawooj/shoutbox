@@ -1,6 +1,6 @@
 package pl.anawoj.psm_lab9_anawoj.json
 
-import pl.anawoj.psm_lab9_anawoj.json.structure.MessageResponse
+import pl.anawoj.psm_lab9_anawoj.json.pojo.MessageResponse
 import retrofit2.Call
 import retrofit2.http.DELETE
 import retrofit2.http.Field

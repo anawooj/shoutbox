@@ -7,15 +7,11 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatEditText
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.textfield.TextInputEditText
 import pl.anawoj.psm_lab9_anawoj.networking.Calls
-import pl.anawoj.psm_lab9_anawoj.networking.MyViewModel
 
 class EditMessageActivity : AppCompatActivity() {
 
@@ -24,10 +20,10 @@ class EditMessageActivity : AppCompatActivity() {
     private var common = Common()
 
     // view
-    private lateinit var conLayout : ConstraintLayout
+    private lateinit var conLayout: ConstraintLayout
     private lateinit var loginTextView: TextView
     private lateinit var dateTextView: TextView
-    private lateinit var messageContentTextInput: TextInputEditText
+    private lateinit var messageContentTextInput: AppCompatEditText
     private lateinit var discardButton: Button
     private lateinit var editButton: Button
     private lateinit var menuButton: ImageButton
@@ -64,7 +60,8 @@ class EditMessageActivity : AppCompatActivity() {
 
         val mySnackbar = common.makeSnackbarNoInternet(conLayout)
 
-        common.observeInternetConnection(owner = this,
+        common.observeInternetConnection(
+            owner = this,
             onDisconnectedUI = { mySnackbar.show() },
             onConnectedUI = { mySnackbar.dismiss() })
 
@@ -72,7 +69,7 @@ class EditMessageActivity : AppCompatActivity() {
             startShoutboxActivity()
         }
         editButton.setOnClickListener {
-            if(common.isInternetConnection == true){
+            if (common.isInternetConnection == true) {
                 val editedMessage = messageContentTextInput.text.toString()
                 val login = loginTextView.text.toString()
                 calls.editMessage(id, editedMessage, login)
@@ -80,7 +77,7 @@ class EditMessageActivity : AppCompatActivity() {
             }
         }
         deleteButton.setOnClickListener {
-            if(common.isInternetConnection == true){
+            if (common.isInternetConnection == true) {
                 calls.deleteMessage(id)
                 startShoutboxActivity()
             }

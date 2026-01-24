@@ -29,14 +29,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Psm_lab9_anawoj" >
+        android:theme="@style/Theme.App.Starting" >
         <activity
             android:name="pl.anawoj.psm_lab9_anawoj.EditMessageActivity"
             android:exported="false"
+            android:theme="@style/Theme.Psm_lab9_anawoj"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="pl.anawoj.psm_lab9_anawoj.ShoutboxActivity"
             android:exported="false"
+            android:theme="@style/Theme.Psm_lab9_anawoj"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="pl.anawoj.psm_lab9_anawoj.LoginActivity"
@@ -47,10 +49,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

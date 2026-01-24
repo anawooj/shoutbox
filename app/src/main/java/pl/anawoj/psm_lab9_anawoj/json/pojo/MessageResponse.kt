@@ -1,4 +1,4 @@
-package pl.anawoj.psm_lab9_anawoj.json.structure
+package pl.anawoj.psm_lab9_anawoj.json.pojo
 
 class MessageResponse {
 

@@ -3,7 +3,6 @@ package pl.anawoj.psm_lab9_anawoj
 import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.PorterDuff
 import android.graphics.PorterDuffXfermode
@@ -13,29 +12,24 @@ import android.os.Handler
 import android.view.MenuItem
 import android.widget.ImageButton
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.edit
+import androidx.core.graphics.toColorInt
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import pl.anawoj.psm_lab9_anawoj.networking.Calls
-import pl.anawoj.psm_lab9_anawoj.networking.MyViewModel
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageAdapter
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageItem
-import androidx.core.graphics.toColorInt
 
 class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     SwipeRefreshLayout.OnRefreshListener {
@@ -90,7 +84,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     fun renderActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_shoutbox)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_shoutbox)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -103,7 +97,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         sendMessageButton = findViewById(R.id.send_button)
 
         sendMessageButton.setOnClickListener {
-            if(common.isInternetConnection == true){
+            if (common.isInternetConnection == true) {
                 val messageContent = messageInput.getText()?.trim().toString()
                 calls.sendMessage(messageContent, login)
                 messageInput.text = null
@@ -115,7 +109,8 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
         val mySnackbar = common.makeSnackbarNoInternet(linearLayout)
 
-        common.observeInternetConnection(owner = this,
+        common.observeInternetConnection(
+            owner = this,
             onDisconnectedUI = { mySnackbar.show() },
             onConnectedUI = { mySnackbar.dismiss() })
 
@@ -265,7 +260,7 @@ class ShoutboxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     }
 
     private fun renderNavDrawer() {
-        drawerLayout = findViewById(R.id.main)
+        drawerLayout = findViewById(R.id.main_shoutbox)
         menuButton = findViewById(R.id.menu_button)
         navView = findViewById(R.id.drawerView)
 

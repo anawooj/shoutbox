@@ -1,15 +1,10 @@
 package pl.anawoj.psm_lab9_anawoj
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.edit
 import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStoreOwner
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_INDEFINITE
@@ -28,7 +23,7 @@ class Common() : AppCompatActivity() {
     }
 
     fun showError(error: String, view: ConstraintLayout, duration: Int) {
-        val mySnackbar = Snackbar.make(view, error, duration).show()
+        Snackbar.make(view, error, duration).show()
     }
 
     fun makeSnackbarNoInternet(layout: View): Snackbar {

@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.edit
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
@@ -17,7 +18,6 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import pl.anawoj.psm_lab9_anawoj.R.id
 import pl.anawoj.psm_lab9_anawoj.R.layout
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class LoginActivity : AppCompatActivity() {
 
@@ -65,12 +65,12 @@ class LoginActivity : AppCompatActivity() {
 
     private fun autoLogin() {
         common.observeInternetConnection(owner = this, onStatusChanged = { isConnected ->
-                if (sharedPreferences.contains("LOGIN") && isConnected)
-                    loadData()
-                else
-                    destroySharedPrefs()
-                    renderActivity()
-            }
+            if (sharedPreferences.contains("LOGIN") && isConnected)
+                loadData()
+            else
+                destroySharedPrefs()
+            renderActivity()
+        }
         )
     }
 
@@ -89,7 +89,8 @@ class LoginActivity : AppCompatActivity() {
         setLoginButton = findViewById(id.setLogin)
         loginInput = findViewById(id.loginInput)
 
-        common.observeInternetConnection(owner = this,
+        common.observeInternetConnection(
+            owner = this,
             onDisconnectedUI = { mySnackbar.show() },
             onConnectedUI = { mySnackbar.dismiss() })
 

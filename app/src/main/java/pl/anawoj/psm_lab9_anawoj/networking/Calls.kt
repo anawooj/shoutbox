@@ -3,7 +3,7 @@ package pl.anawoj.psm_lab9_anawoj.networking
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import pl.anawoj.psm_lab9_anawoj.Common
-import pl.anawoj.psm_lab9_anawoj.json.structure.MessageResponse
+import pl.anawoj.psm_lab9_anawoj.json.pojo.MessageResponse
 import pl.anawoj.psm_lab9_anawoj.recycleview.MessageItem
 import retrofit2.Call
 import retrofit2.Callback
@@ -50,7 +50,8 @@ class Calls : AppCompatActivity() {
             override fun onResponse(
                 call: Call<MessageResponse?>,
                 response: Response<MessageResponse?>
-            ) {}
+            ) {
+            }
 
             override fun onFailure(
                 call: Call<MessageResponse?>,

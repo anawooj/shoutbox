@@ -1,16 +1,11 @@
 package pl.anawoj.psm_lab9_anawoj.recycleview
 
-import android.graphics.Canvas
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
-import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import pl.anawoj.psm_lab9_anawoj.EditMessageActivity
 import pl.anawoj.psm_lab9_anawoj.R
-import pl.anawoj.psm_lab9_anawoj.ShoutboxActivity
 
 
 open class MessageAdapter(private val messageItemList: List<MessageItem>) :

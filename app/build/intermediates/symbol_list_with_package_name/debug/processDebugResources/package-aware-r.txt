@@ -86,7 +86,6 @@ animator mtrl_fab_transformation_sheet_expand_spec
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
-array preloaded_fonts
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3560,6 +3559,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable app_icon_512
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -3684,7 +3684,6 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font courier_prime
-font saira
 font sulphur_point
 id ALT
 id BOTTOM_END
@@ -3955,6 +3954,7 @@ id loginView
 id login_view
 id m3_side_sheet
 id main
+id main_shoutbox
 id marquee
 id masked
 id match_constraint
